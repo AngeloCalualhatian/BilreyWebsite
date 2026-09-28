@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Bilrey Engineering</title>
+<meta name="description" content="Browse selected infrastructure, industrial, commercial, energy, and technology engineering projects delivered by Bilrey Engineering." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: { 950: '#060b16', 900: '#0a1628', 800: '#101e33', 700: '#172a45' },
+          ink: { 900: '#0f172a', 600: '#475569', 500: '#64748b' },
+          accent: { DEFAULT: '#0007b4', 400: '#4c5feb', 600: '#00068f', 100: '#e7e9fb' },
+          line: '#e2e8f0'
+        },
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+          display: ['Manrope', 'Inter', 'ui-sans-serif', 'system-ui']
+        },
+        maxWidth: { 'container': '1280px' }
+      }
+    }
+  };
+</script>
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[var(--off-white)] text-[var(--ink-900)] antialiased">
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header id="site-nav" data-transparent-home="false" data-scrolled="true" class="nav-shell fixed inset-x-0 top-0 z-50 text-[var(--ink-900)]">
+  <nav class="mx-auto flex max-w-container items-center justify-between px-6 py-4 lg:px-10" aria-label="Primary">
+    <a href="index.html" class="flex items-center gap-2.5 font-display text-xl font-extrabold tracking-tight">
+      <img src="images/bilrey-logo.png" alt="Bilrey Construction" class="h-11 w-auto" />
+    </a>
+
+    <ul class="hidden items-center gap-8 text-sm font-semibold lg:flex">
+      <li><a href="index.html" data-nav-link="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" data-nav-link="about.html" class="nav-link">About</a></li>
+      <li><a href="services.html" data-nav-link="services.html" class="nav-link">Services</a></li>
+      <li><a href="projects.html" data-nav-link="projects.html" class="nav-link">Projects</a></li>
+      <li><a href="index.html#industries" class="nav-link">Industries</a></li>
+      <li><a href="index.html#insights" class="nav-link">Insights</a></li>
+      <li><a href="contact.html" data-nav-link="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="hidden lg:block">
+      <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+    </div>
+
+    <button id="nav-toggle" type="button" class="lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+      <svg id="icon-menu-open" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg id="icon-menu-close" width="26" height="26" viewBox="0 0 24 24" fill="none" class="hidden" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="hidden lg:hidden bg-white text-[var(--ink-900)] border-t border-[var(--line)] shadow-lg">
+    <ul class="flex flex-col gap-1 px-6 py-4 text-base font-semibold">
+      <li><a href="index.html" class="block rounded-lg px-3 py-3 hover:bg-[var(--off-white)]">Home</a></li>
+      <li><a href="about.html" class="block rounded-lg px-3 py-3 hover:bg-[var(--off-white)]">About</a></li>
+      <li><a href="services.html" class="block rounded-lg px-3 py-3 hover:bg-[var(--off-white)]">Services</a></li>
+      <li><a href="projects.html" class="block rounded-lg px-3 py-3 hover:bg-[var(--off-white)]">Projects</a></li>
+      <li><a href="index.html#industries" class="block rounded-lg px-3 py-3 hover:bg-[var(--off-white)]">Industries</a></li>
+      <li><a href="index.html#insights" class="block rounded-lg px-3 py-3 hover:bg-[var(--off-white)]">Insights</a></li>
+      <li><a href="contact.html" class="block rounded-lg px-3 py-3 hover:bg-[var(--off-white)]">Contact</a></li>
+      <li class="pt-2"><a href="contact.html" class="btn btn-primary w-full">Get a Quote</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="relative overflow-hidden bg-navy-900 pb-20 pt-36 text-white lg:pb-24">
+  <div class="pointer-events-none absolute inset-0 bg-grid-dark hero-fade-mask"></div>
+  <div class="relative mx-auto max-w-container px-6 lg:px-10" data-reveal>
+    <p class="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-accent-400">Our Work</p>
+    <h1 class="font-display max-w-2xl text-4xl font-extrabold leading-tight sm:text-5xl">Selected Projects</h1>
+    <p class="mt-5 max-w-xl text-base leading-relaxed text-white/70">A cross-section of infrastructure, industrial, commercial, energy, and technology projects delivered by our engineering teams.</p>
+  </div>
+</section>
+
+<section class="bg-white py-20 lg:py-28">
+  <div class="mx-auto max-w-container px-6 lg:px-10">
+    <div class="flex flex-wrap justify-center gap-2" role="group" aria-label="Filter projects by category">
+      <button type="button" data-filter="all" aria-pressed="true" class="filter-chip rounded-full border border-[var(--line)] px-4 py-2 text-sm font-semibold">All</button>
+      <button type="button" data-filter="infrastructure" aria-pressed="false" class="filter-chip rounded-full border border-[var(--line)] px-4 py-2 text-sm font-semibold">Infrastructure</button>
+      <button type="button" data-filter="industrial" aria-pressed="false" class="filter-chip rounded-full border border-[var(--line)] px-4 py-2 text-sm font-semibold">Industrial</button>
+      <button type="button" data-filter="commercial" aria-pressed="false" class="filter-chip rounded-full border border-[var(--line)] px-4 py-2 text-sm font-semibold">Commercial</button>
+      <button type="button" data-filter="energy" aria-pressed="false" class="filter-chip rounded-full border border-[var(--line)] px-4 py-2 text-sm font-semibold">Energy</button>
+      <button type="button" data-filter="technology" aria-pressed="false" class="filter-chip rounded-full border border-[var(--line)] px-4 py-2 text-sm font-semibold">Technology</button>
+    </div>
+
+    <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <article class="project-card card overflow-hidden" data-category="infrastructure" data-reveal>
+        <div class="relative flex h-52 items-center justify-center bg-gradient-to-br from-navy-800 to-navy-950 bg-grid-dark">
+          <svg width="120" height="70" viewBox="0 0 120 70" fill="none" aria-hidden="true"><path d="M0 60h120M15 60V30M35 60V15M60 60V5M85 60V15M105 60V30" stroke="#4c5feb" stroke-width="2.5" stroke-linecap="round"/><path d="M0 45L120 45" stroke="#3a5a80" stroke-width="1.5"/></svg>
+          <span class="absolute left-4 top-4 rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-white backdrop-blur">Infrastructure</span>
+        </div>
+        <div class="p-7">
+          <h3 class="font-display text-lg font-bold text-navy-900">Metro Infrastructure Development</h3>
+          <p class="mt-1 text-sm font-medium text-[var(--ink-500)]">Lagos, Nigeria</p>
+          <p class="mt-3 text-sm leading-relaxed text-[var(--ink-600)] line-clamp-3">Structural and civil engineering for an 18km elevated rail corridor connecting three transit hubs.</p>
+          <button type="button" class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-accent-600"
+            data-case-study data-category-label="Infrastructure" data-title="Metro Infrastructure Development" data-location="Lagos, Nigeria" data-image=""
+            data-overview="An 18km elevated rail corridor connecting three major transit hubs across the metropolitan core, designed to move 40,000 passengers per day."
+            data-challenge="The alignment crossed dense urban infrastructure, requiring foundation design around existing utilities and minimal disruption to daily traffic."
+            data-approach="Our structural team modelled the full corridor in BIM, coordinating pier placement with utility mapping and running seismic and wind-load simulations for every span."
+            data-solution="A segmental elevated guideway system with standardized precast piers, reducing on-site construction time by 30% versus cast-in-place methods."
+            data-results="Delivered 4 months ahead of schedule with zero lost-time safety incidents across 2.1 million labor hours."
+            data-tech="BIM, Structural Analysis, Seismic Simulation, Precast Design">View Case Study →</button>
+        </div>
+      </article>
+
+      <article class="project-card card overflow-hidden" data-category="industrial" data-reveal data-reveal-delay="1">
+        <div class="relative flex h-52 items-center justify-center bg-gradient-to-br from-navy-800 to-navy-950 bg-grid-dark">
+          <svg width="120" height="80" viewBox="0 0 120 80" fill="none" aria-hidden="true"><rect x="10" y="35" width="100" height="35" stroke="#4c5feb" stroke-width="2"/><rect x="25" y="10" width="14" height="25" stroke="#3a5a80" stroke-width="2"/><rect x="55" y="0" width="14" height="35" stroke="#3a5a80" stroke-width="2"/><rect x="85" y="15" width="14" height="20" stroke="#3a5a80" stroke-width="2"/></svg>
+          <span class="absolute left-4 top-4 rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-white backdrop-blur">Industrial</span>
+        </div>
+        <div class="p-7">
+          <h3 class="font-display text-lg font-bold text-navy-900">Industrial Facility Upgrade</h3>
+          <p class="mt-1 text-sm font-medium text-[var(--ink-500)]">Port Harcourt, Nigeria</p>
+          <p class="mt-3 text-sm leading-relaxed text-[var(--ink-600)] line-clamp-3">Mechanical and electrical retrofit of a processing plant to increase throughput and safety compliance.</p>
+          <button type="button" class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-accent-600"
+            data-case-study data-category-label="Industrial" data-title="Industrial Facility Upgrade" data-location="Port Harcourt, Nigeria" data-image=""
+            data-overview="A full mechanical and electrical retrofit of an active processing plant, executed without halting production."
+            data-challenge="The client needed a 22% increase in throughput while upgrading aging electrical infrastructure that no longer met current safety codes — all without a full shutdown."
+            data-approach="We phased the retrofit across four production lines, using digital twins to simulate each phase before physical implementation."
+            data-solution="New switchgear, upgraded PLC controls, and a redesigned piping network installed in rolling maintenance windows."
+            data-results="22% throughput increase, full code compliance, and a 40% reduction in unplanned downtime in the first year."
+            data-tech="PLC Automation, Digital Twin, Electrical Retrofit, Process Engineering">View Case Study →</button>
+        </div>
+      </article>
+
+      <article class="project-card card overflow-hidden" data-category="technology" data-reveal data-reveal-delay="2">
+        <div class="relative flex h-52 items-center justify-center bg-gradient-to-br from-navy-800 to-navy-950 bg-grid-dark">
+          <svg width="110" height="90" viewBox="0 0 110 90" fill="none" aria-hidden="true"><rect x="20" y="10" width="70" height="70" rx="4" stroke="#4c5feb" stroke-width="2"/><path d="M35 10V0M75 10V0M35 90v-10M75 90v-10M20 30h-10M20 60h-10M100 30H90M100 60H90" stroke="#3a5a80" stroke-width="2"/><rect x="38" y="28" width="34" height="34" stroke="#3a5a80" stroke-width="2"/></svg>
+          <span class="absolute left-4 top-4 rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-white backdrop-blur">Technology</span>
+        </div>
+        <div class="p-7">
+          <h3 class="font-display text-lg font-bold text-navy-900">Smart Building Engineering</h3>
+          <p class="mt-1 text-sm font-medium text-[var(--ink-500)]">Abuja, Nigeria</p>
+          <p class="mt-3 text-sm leading-relaxed text-[var(--ink-600)] line-clamp-3">Integrated BMS and IoT sensor design for a 24-storey mixed-use tower, reducing energy use by 18%.</p>
+          <button type="button" class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-accent-600"
+            data-case-study data-category-label="Technology" data-title="Smart Building Engineering" data-location="Abuja, Nigeria" data-image=""
+            data-overview="A building management system and IoT sensor network integrated across a 24-storey mixed-use tower."
+            data-challenge="The developer wanted measurable energy savings and centralized control without a costly full system replacement."
+            data-approach="We layered an open-protocol BMS over existing HVAC and lighting infrastructure, adding over 900 IoT sensors for real-time monitoring."
+            data-solution="A unified dashboard giving facilities staff live visibility into energy, occupancy, and equipment health across every floor."
+            data-results="18% reduction in annual energy consumption and a 3-year payback period on system cost."
+            data-tech="BMS Integration, IoT Sensors, Data Analytics, Energy Modelling">View Case Study →</button>
+        </div>
+      </article>
+
+      <article class="project-card card overflow-hidden" data-category="energy" data-reveal>
+        <div class="relative flex h-52 items-center justify-center bg-gradient-to-br from-navy-800 to-navy-950 bg-grid-dark">
+          <svg width="120" height="80" viewBox="0 0 120 80" fill="none" aria-hidden="true"><g stroke="#4c5feb" stroke-width="2"><rect x="5" y="10" width="24" height="15"/><rect x="35" y="10" width="24" height="15"/><rect x="65" y="10" width="24" height="15"/><rect x="5" y="30" width="24" height="15"/><rect x="35" y="30" width="24" height="15"/><rect x="65" y="30" width="24" height="15"/></g><path d="M95 20l10-15v10h8l-12 18v-13z" fill="#4c5feb"/></svg>
+          <span class="absolute left-4 top-4 rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-white backdrop-blur">Energy</span>
+        </div>
+        <div class="p-7">
+          <h3 class="font-display text-lg font-bold text-navy-900">Renewable Energy Facility</h3>
+          <p class="mt-1 text-sm font-medium text-[var(--ink-500)]">Kano, Nigeria</p>
+          <p class="mt-3 text-sm leading-relaxed text-[var(--ink-600)] line-clamp-3">Engineering design and grid integration for a 40MW solar generation facility.</p>
+          <button type="button" class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-accent-600"
+            data-case-study data-category-label="Energy" data-title="Renewable Energy Facility" data-location="Kano, Nigeria" data-image=""
+            data-overview="A 40MW solar generation facility engineered from site layout through grid interconnection."
+            data-challenge="The site's soil conditions and seasonal dust loading required a non-standard mounting and cleaning strategy to protect long-term yield."
+            data-approach="Geotechnical surveys informed a custom pile-driven racking design; electrical engineers modelled inverter placement to minimize line loss."
+            data-solution="A single-axis tracking array paired with an automated cleaning schedule and a purpose-built substation for grid interconnection."
+            data-results="40MW of clean capacity delivered, exceeding projected yield by 6% in the first operating year."
+            data-tech="Solar PV Design, Geotechnical Engineering, Grid Interconnection, SCADA">View Case Study →</button>
+        </div>
+      </article>
+
+      <article class="project-card card overflow-hidden" data-category="commercial" data-reveal data-reveal-delay="1">
+        <div class="relative flex h-52 items-center justify-center bg-gradient-to-br from-navy-800 to-navy-950 bg-grid-dark">
+          <svg width="100" height="90" viewBox="0 0 100 90" fill="none" aria-hidden="true"><rect x="15" y="5" width="30" height="85" stroke="#4c5feb" stroke-width="2"/><rect x="55" y="25" width="30" height="65" stroke="#3a5a80" stroke-width="2"/><g stroke="#3a5a80" stroke-width="1.4"><path d="M20 20h20M20 35h20M20 50h20M20 65h20M60 40h20M60 55h20M60 70h20"/></g></svg>
+          <span class="absolute left-4 top-4 rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-white backdrop-blur">Commercial</span>
+        </div>
+        <div class="p-7">
+          <h3 class="font-display text-lg font-bold text-navy-900">Commercial Structural Development</h3>
+          <p class="mt-1 text-sm font-medium text-[var(--ink-500)]">Accra, Ghana</p>
+          <p class="mt-3 text-sm leading-relaxed text-[var(--ink-600)] line-clamp-3">Structural design for a twin-tower commercial complex on reclaimed coastal land.</p>
+          <button type="button" class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-accent-600"
+            data-case-study data-category-label="Commercial" data-title="Commercial Structural Development" data-location="Accra, Ghana" data-image=""
+            data-overview="A twin-tower commercial complex built on reclaimed coastal land, requiring specialized foundation engineering."
+            data-challenge="Reclaimed soil conditions and coastal wind loading demanded a foundation and structural system beyond standard commercial practice."
+            data-approach="Deep pile foundations were designed from extensive geotechnical testing, paired with a damped structural frame to manage lateral wind loads."
+            data-solution="A post-tensioned concrete frame on driven piles, engineered to perform against both settlement risk and cyclonic wind events."
+            data-results="Zero settlement deviation from design tolerance after 3 years of monitoring post-occupancy."
+            data-tech="Geotechnical Engineering, Post-Tensioned Concrete, Wind Load Analysis">View Case Study →</button>
+        </div>
+      </article>
+
+      <article class="project-card card overflow-hidden" data-category="infrastructure" data-reveal data-reveal-delay="2">
+        <div class="relative flex h-52 items-center justify-center bg-gradient-to-br from-navy-800 to-navy-950 bg-grid-dark">
+          <svg width="110" height="80" viewBox="0 0 110 80" fill="none" aria-hidden="true"><path d="M10 70c15-10 25-10 35 0s25 10 35 0 25-10 20-5" stroke="#4c5feb" stroke-width="2.5" fill="none"/><rect x="45" y="15" width="20" height="35" stroke="#3a5a80" stroke-width="2"/><circle cx="55" cy="15" r="6" stroke="#3a5a80" stroke-width="2"/></svg>
+          <span class="absolute left-4 top-4 rounded-full bg-white/10 px-3 py-1 text-xs font-bold text-white backdrop-blur">Infrastructure</span>
+        </div>
+        <div class="p-7">
+          <h3 class="font-display text-lg font-bold text-navy-900">Water Infrastructure Project</h3>
+          <p class="mt-1 text-sm font-medium text-[var(--ink-500)]">Nairobi, Kenya</p>
+          <p class="mt-3 text-sm leading-relaxed text-[var(--ink-600)] line-clamp-3">Design and delivery of a municipal water treatment and distribution upgrade serving 200,000 residents.</p>
+          <button type="button" class="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-accent-600"
+            data-case-study data-category-label="Infrastructure" data-title="Water Infrastructure Project" data-location="Nairobi, Kenya" data-image=""
+            data-overview="A municipal water treatment and distribution upgrade designed to serve 200,000 residents reliably."
+            data-challenge="Aging distribution infrastructure caused significant water loss, and the treatment plant was operating near capacity."
+            data-approach="Environmental engineers assessed the full network, prioritizing high-loss segments and modelling a phased treatment plant expansion."
+            data-solution="Trenchless pipe rehabilitation on priority segments and a modular treatment expansion to increase capacity by 35%."
+            data-results="Non-revenue water loss cut by 27%, with treatment capacity now supporting projected 10-year population growth."
+            data-tech="Environmental Engineering, Hydraulic Modelling, Trenchless Rehabilitation">View Case Study →</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div id="case-study-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-overlay absolute inset-0"></div>
+  <div class="relative flex min-h-full items-center justify-center p-4 sm:p-8">
+    <div class="modal-panel relative max-h-[88vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white shadow-2xl">
+      <button type="button" data-modal-close class="absolute right-5 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md" aria-label="Close case study">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="relative flex h-56 items-center justify-center overflow-hidden bg-gradient-to-br from-navy-800 to-navy-950 bg-grid-dark sm:h-72">
+        <img data-field="image" src="" alt="" class="hidden absolute inset-0 h-full w-full object-cover" />
+        <svg width="90" height="90" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6" stroke="#4c5feb" stroke-width="1.4"/></svg>
+      </div>
+      <div class="p-7 sm:p-10">
+        <span data-field="category" class="inline-block rounded-full bg-accent-100 px-3 py-1 text-xs font-bold uppercase tracking-wide text-accent-600"></span>
+        <h2 id="modal-title" data-field="title" class="mt-4 font-display text-2xl font-extrabold text-navy-900 sm:text-3xl"></h2>
+        <p data-field="location" class="mt-1 text-sm font-medium text-[var(--ink-500)]"></p>
+
+        <div class="mt-8 space-y-7">
+          <div>
+            <h3 class="text-xs font-bold uppercase tracking-[0.14em] text-[var(--ink-500)]">Project Overview</h3>
+            <p data-field="overview" class="mt-2 text-sm leading-relaxed text-[var(--ink-600)]"></p>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold uppercase tracking-[0.14em] text-[var(--ink-500)]">The Challenge</h3>
+            <p data-field="challenge" class="mt-2 text-sm leading-relaxed text-[var(--ink-600)]"></p>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold uppercase tracking-[0.14em] text-[var(--ink-500)]">Engineering Approach</h3>
+            <p data-field="approach" class="mt-2 text-sm leading-relaxed text-[var(--ink-600)]"></p>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold uppercase tracking-[0.14em] text-[var(--ink-500)]">The Solution</h3>
+            <p data-field="solution" class="mt-2 text-sm leading-relaxed text-[var(--ink-600)]"></p>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold uppercase tracking-[0.14em] text-[var(--ink-500)]">Results</h3>
+            <p data-field="results" class="mt-2 text-sm leading-relaxed text-[var(--ink-600)]"></p>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold uppercase tracking-[0.14em] text-[var(--ink-500)]">Technologies Used</h3>
+            <div data-field="tech" class="mt-3 flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary mt-9">Discuss a Similar Project</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="relative overflow-hidden bg-navy-950 py-20 text-white">
+  <div class="pointer-events-none absolute inset-0 bg-grid-dark opacity-60"></div>
+  <div class="relative mx-auto flex max-w-container flex-col items-center justify-between gap-6 px-6 text-center lg:flex-row lg:text-left lg:px-10" data-reveal>
+    <h2 class="font-display text-2xl font-extrabold sm:text-3xl">Ready to start your next engineering project?</h2>
+    <a href="contact.html" class="btn btn-primary flex-none">Start a Project</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-navy-950 pt-20 text-white/70">
+  <div class="mx-auto max-w-container px-6 lg:px-10">
+    <div class="grid gap-12 pb-14 sm:grid-cols-2 lg:grid-cols-5">
+      <div class="lg:col-span-2">
+        <a href="index.html" class="flex items-center gap-2.5 font-display text-xl font-extrabold text-white">
+          <img src="images/bilrey-logo.png" alt="Bilrey Construction" class="h-12 w-auto" />
+        </a>
+        <p class="mt-5 max-w-sm text-sm leading-relaxed">A multidisciplinary engineering consultancy delivering civil, structural, electrical, mechanical, industrial, and environmental engineering solutions worldwide.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#" aria-label="Bilrey Engineering on LinkedIn" class="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 hover:border-accent-400 hover:text-accent-400"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5.001A2.5 2.5 0 014.98 3.5zM.5 8.98H9.5V23.5H.5V8.98zM15.5 8.98h8.62v1.99h.12c1.2-2.1 4.14-2.3 5.66-1.28 2.28 1.55 2.6 4.35 2.6 7.02V23.5h-9v-6.4c0-1.53-.03-3.5-2.13-3.5-2.13 0-2.46 1.67-2.46 3.4v6.5h-9V8.98z"/></svg></a>
+          <a href="#" aria-label="Bilrey Engineering on X (Twitter)" class="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 hover:border-accent-400 hover:text-accent-400"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-6.7L4.5 22H1.4l8.1-9.3L1 2h7.2l5 6.1L18.9 2zm-1.2 18h1.7L7.4 4H5.6l12.1 16z"/></svg></a>
+          <a href="#" aria-label="Bilrey Engineering on Instagram" class="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 hover:border-accent-400 hover:text-accent-400"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+
+      <nav aria-label="Company">
+        <h3 class="text-sm font-bold text-white">Company</h3>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="about.html" class="hover:text-white">About</a></li>
+          <li><a href="services.html" class="hover:text-white">Services</a></li>
+          <li><a href="projects.html" class="hover:text-white">Projects</a></li>
+          <li><a href="index.html#industries" class="hover:text-white">Industries</a></li>
+          <li><a href="index.html#insights" class="hover:text-white">Insights</a></li>
+          <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Services">
+        <h3 class="text-sm font-bold text-white">Services</h3>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="services.html#civil" class="hover:text-white">Civil Engineering</a></li>
+          <li><a href="services.html#structural" class="hover:text-white">Structural Engineering</a></li>
+          <li><a href="services.html#electrical" class="hover:text-white">Electrical Engineering</a></li>
+          <li><a href="services.html#mechanical" class="hover:text-white">Mechanical Engineering</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h3 class="text-sm font-bold text-white">Contact</h3>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="mailto:info@bilreyengineering.com" class="hover:text-white">info@bilreyengineering.com</a></li>
+          <li><a href="tel:+15551234567" class="hover:text-white">+1 (555) 123-4567</a></li>
+          <li>221 Industrial Parkway, Suite 400<br />Metro City, MC 10011</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-8 text-xs sm:flex-row">
+      <p>&copy; 2026 Bilrey Engineering. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
